@@ -19,16 +19,20 @@ function statsEntered() {
 </script>
 
 <template>
+    <div id="bmi-index-form">
+        <h2>Enter your height and weight</h2>
 
-    <h2>Enter your height and weight</h2>
+        <label for="height">Height</label><input id="height" v-model="height"/>
+        <label for="weight">Weight</label><input id="weight" v-model="weight"/>
 
-    <label for="height">Height in meters</label><input id="height" v-model="height"/>
-    <label for="weight">Weight in kilograms</label><input id="weight" v-model="weight"/>
-
-    <button v-on:click="statsEntered">Calculate!</button>
-
+        <button v-on:click="statsEntered">Calculate!</button>
+    </div>
 </template>
 
 <style scoped>
-
+#bmi-index-form {
+    border: 2px solid grey;
+    background-color: salmon;
+    color: black;
+}
 </style>
