@@ -20,7 +20,7 @@ function statsEntered() {
 
 <template>
 
-    <h2>This is the BMI page</h2>
+    <h2>Enter your height and weight</h2>
 
     <label for="height">Height in meters</label><input id="height" v-model="height"/>
     <label for="weight">Weight in kilograms</label><input id="weight" v-model="weight"/>
